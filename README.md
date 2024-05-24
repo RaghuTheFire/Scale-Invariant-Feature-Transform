@@ -5,7 +5,8 @@ Scale-Invariant Feature Transform (SIFT) is a powerful computer vision algorithm
 # Reference
 https://medium.com/@siromermer/object-tracking-with-sift-algorithm-using-opencv-51be3c6882c9
 
-This C++ and Python code and uses the OpenCV library for image processing and feature detection. It performs the following steps:
+# SIFTTracker.cpp
+This C++ uses the OpenCV library for image processing and feature detection. It performs the following steps:
  Here's a breakdown of the code: 
  1. The necessary OpenCV libraries are included: `opencv2/opencv.hpp` and `opencv2/features2d.hpp`.
 2. The `main` function is the entry point of the program.
