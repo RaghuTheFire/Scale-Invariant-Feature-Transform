@@ -19,13 +19,13 @@ This C++ uses the OpenCV library for image processing and feature detection. It 
 9. The frame is displayed in a window named "Frame".
 10. The user can press 's' to start tracking the selected ROI or 'q' to quit the program.
 11. If tracking is enabled, the following steps are performed:
-11a. The current frame's ROI is extracted.
-11b. SIFT keypoints and descriptors are computed for the current ROI.
-11c. The k-Nearest Neighbors (kNN) algorithm is used to match the descriptors between the previous and current frames.
-11d. Good matches are filtered based on a ratio test.
-11e. If there are enough good matches, a homography matrix is computed using RANSAC.
-11f. The homography matrix is used to transform the ROI from the previous frame to the current frame.
-11g. The transformed ROI is drawn on the current frame using a red polygon.
-11h. The previous frame, keypoints, and descriptors are updated for the next iteration.
+- a. The current frame's ROI is extracted.
+- b. SIFT keypoints and descriptors are computed for the current ROI.
+- c. The k-Nearest Neighbors (kNN) algorithm is used to match the descriptors between the previous and current frames.
+- d. Good matches are filtered based on a ratio test.
+- e. If there are enough good matches, a homography matrix is computed using RANSAC.
+- f. The homography matrix is used to transform the ROI from the previous frame to the current frame.
+- g. The transformed ROI is drawn on the current frame using a red polygon.
+- h. The previous frame, keypoints, and descriptors are updated for the next iteration.
 
 12. After the main loop ends, the video capture object is released, and all windows are closed. In summary, this code allows the user to select a region of interest in a video, and then it tracks that region across subsequent frames using SIFT feature detection and matching, along with homography estimation to account for perspective changes.
